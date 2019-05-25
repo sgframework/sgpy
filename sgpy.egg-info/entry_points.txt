@@ -1,0 +1,3 @@
+[console_scripts]
+sgpy = sgapi:main
+
