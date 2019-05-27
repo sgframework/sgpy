@@ -1,6 +1,7 @@
 LICENSE.txt
 MANIFEST.in
 README.md
+installed-pkgs.md
 setup.cfg
 setup.py
 sgpy.egg-info/PKG-INFO
