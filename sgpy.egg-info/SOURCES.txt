@@ -12,11 +12,6 @@ sgpy.egg-info/requires.txt
 sgpy.egg-info/top_level.txt
 src/sgapi/__init__.py
 src/sgapi/__main__.py
-src/sgapi/chat.py
-src/sgapi/echo.py
 src/sgapi/favicon.ico
-src/sgapi/listen.py
-src/sgapi/main.py
-src/sgapi/server.py
 src/sgapi/x.py
 src/sgapi/data/flash.dat

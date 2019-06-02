@@ -1,18 +1,4 @@
 
-## SG Python Development Package
-
-## Python
-
-Usage:
-
-```bash
-
-$ sudo apt-get install python pip
-
-$ pip install sgpy
-
-```
-
 <pre style="font-size:10px;background-color:black;"><code style="color:#ddd;" class="language-cmd">  
 
 
@@ -74,17 +60,12 @@ $ pip install sgpy
                                           .:                
                                           </code></pre>
 
-## Installation
 
-<h3 id="python"><a class="header-link" href="#python"></a><img src="http://ipool.remotewebaccess.com/images/assests/python.png" width="70px" height="80px" /></h3>
+<h3 id="python"><a class="header-link" href="#python"></a><img src="{{ asset('images/assests/python.png') }}" width="70px" height="80px" /></h3>
 <a href="https://badge.fury.io/py/sgpy"><img src="https://badge.fury.io/py/sgpy.png" alt="PyPI version" height="18"></a> <br />
-
-
-
 First <a href="https://www.python.org/downloads/" target="_blank">download</a> & install <strong>Python</strong> for windows.
 <br />
-
-#### On Linux Terminal
+on Linux Terminal
 
 <pre><code class="language-bash">   
 root@0x01:~# apt-get install python
@@ -101,8 +82,6 @@ root@0x01:~/sgpy# ls
 root@0x01:~/sgpy# python x.py
     What do you want to search for ? >>
 </code></pre>
-
-#### On Command Line Windows
 <pre style="font-size:10px;background-color:black;"><code style="color:#ddd;" class="language-cmd">  
 
 C:\Program Files\Windows Server\Bin\WebApps\Site\cdn\sgpy>python setup.py --help-commands
@@ -149,8 +128,6 @@ usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
 
 C:\Program Files\Windows Server\Bin\WebApps\Site\cdn\sgpy>
 </code></pre>
-
-### Setup, install and push pip package.
 
 <pre style="font-size:10px;background-color:black;"><code style="color:#ddd;" class="language-cmd">  
 
@@ -283,7 +260,6 @@ Finished processing dependencies for sgpy==1.0.8
 
 </code></pre>
 
-##### Python & pip commands
 
 <pre style="font-size:10px;background-color:black;"><code style="color:#ddd;" class="language-cmd">  
 
@@ -324,13 +300,34 @@ C:\Program Files\Windows Server\Bin\WebApps\Site\cdn\sgpy\src\sgapi>python x.py
 Hello, World!
 
 
+
+┌────────────────────────────────────────┐
+│0: pip install -e .                     │
+│1: python setup.py sdist                │
+│2: pip install -e .                     │
+│3: twine upload --skip-existing dist/*  │
+│4: python setup.py sdist                │
+│5: pip install -e .                     │
+│6: twine upload --skip-existing dist/*  │
+│7: python setup.py sdist                │
+│8: pip install -e .                     │
+│9: dir                                  │
+└────────────────────────────────────────┘
+
+</code></pre>
+
+<pre style="font-size:10px;background-color:black;"><code style="color:#ddd;" class="language-cmd">  
+
 C:\Users\a7med\Desktop\development>pip install sgpy==1.0.1
 Collecting sgpy==1.0.1
   Using cached https://files.pythonhosted.org/packages/b3/b5/6e148a8eaae37241cb931f59568392461db694197082d5e018bffc9ce2f3/sgpy-1.0.1-py2.py3-none-any.whl
 Requirement already satisfied: peppercorn in c:\program files\python37\lib\site-packages (from sgpy==1.0.1) (0.6)
 Installing collected packages: sgpy
 Successfully installed sgpy-1.0.1
+</code></pre>
 
+
+<pre style="font-size:10px;background-color:black;"><code style="color:#ddd;" class="language-cmd">  
 
 C:\Program Files\Python37\Scripts>sgpy
 Call your main application code here
@@ -340,7 +337,7 @@ Call your main application code here
 
 </code></pre>
 
-#### Python Server Initiation
+<h5 id="python-server-init"><a class="header-link" href="#python-server-init"></a> Python Server Initiation</h5>
 
 <pre style="font-size:10px;background-color:black;"><code style="color:#ddd;" class="language-cmd">  
 
@@ -357,55 +354,4 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 127.0.0.1 - - [25/May/2019 00:42:26] "GET /data/flash.dat HTTP/1.1" 200 -
 127.0.0.1 - - [25/May/2019 00:42:29] "GET /main.py HTTP/1.1" 200 -
 127.0.0.1 - - [25/May/2019 00:42:34] "GET /pip-delete-this-directory.txt HTTP/1.1" 200 -
-</code></pre>
-
-
-
-#### Installed pip's
-
-```cmd
-
-C:\Program Files\Windows Server\Bin\WebApps\Site\cdn>pip list
-Package    Version
----------- -------
-peppercorn 0.6
-pip        19.1.1
-setuptools 28.8.0
-sgpy       1.0.8
-
-
-C:\Program Files\Windows Server\Bin\WebApps\Site\cdn>pip show sgpy
-Name: sgpy
-Version: 1.0.8
-Summary: Python project extending main framework functionalities
-Home-page: https://github.com/sgframework/sgpy
-Author: sgpy
-Author-email: ads@ipool.remotewebaccess.com
-License: MIT
-Location: c:\program files\python36\lib\site-packages
-Requires: peppercorn
-Required-by:
-
-```
-
-
-#### cmd commands history
-
-<pre style="font-size:10px;background-color:black;"><code style="color:#ddd;" class="language-cmd">  
-
-┌────────────────────────────────────────┐
-│0: pip install -e .                     │
-│1: python setup.py sdist                │
-│2: pip install -e .                     │
-│3: twine upload --skip-existing dist/*  │
-│4: python setup.py sdist                │
-│5: pip install -e .                     │
-│6: twine upload --skip-existing dist/*  │
-│7: python setup.py sdist                │
-│8: pip install -e .                     │
-│9: dir                                  │
-└────────────────────────────────────────┘
-
-
-
 </code></pre>
