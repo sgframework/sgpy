@@ -11,7 +11,7 @@ mccabe==0.6.1
 peppercorn==0.6
 pipenv==2018.11.26
 pkginfo==1.5.0.1
-Pygments==2.4.0
+Pygments==2.7.4
 pylint==2.3.1
 readme-renderer==24.0
 requests==2.22.0
